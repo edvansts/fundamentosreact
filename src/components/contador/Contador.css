@@ -1,0 +1,19 @@
+.Contador input {
+    font-size: 1.1rem;
+}
+
+.Contador button{
+    margin: 10px ;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #4FF;
+    font-size: 1.1rem;
+}
+.Contador h3 {
+    font-size: 1.5rem;
+}
+.Contador .hard {
+    background-color: #F11;
+    color: #FFF;
+}
