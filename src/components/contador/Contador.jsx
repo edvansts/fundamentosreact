@@ -30,10 +30,13 @@ export default class Contador extends React.Component {
         const passo = typeof value==='string' && value!=='' ? '' : Number(value)
         this.setState({passo})
     }
+    /*handleMouseMove = (e) => {
+        console.log('A posição do mouse é x= '+e.clientX + ' e y= '+e.clientY)
+    }*/
 
     render() {
         return (
-            <div className="Contador">
+            <div className="Contador" /*onMouseMove={this.handleMouseMove}*/>
                 <h2>Contador</h2>
                 <Display numero={this.state.numero}/>
                 <PassoForm passo={this.state.passo} setPasso={this.setPasso}/>

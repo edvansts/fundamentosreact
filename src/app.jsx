@@ -14,6 +14,7 @@ import DiretaFather from './components/comunicação/DiretaFather'
 import IndiretaFather from './components/comunicação/IndiretaFather'
 import Input from './components/controlado/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/megasena/Mega'
 
 
 export default class App extends React.Component {
@@ -50,9 +51,15 @@ export default class App extends React.Component {
             <div className="App">
                 <h1>Fundamentos React</h1>
                 <div className="Cards">
+
+                    <Card color="#0b8043" title="Gerador de Apostas: Megasena" >
+                        <Mega />
+                    </Card>
+
                     <Card color="#3FF" title="Componente Controlado (Input)" >
                         <Contador numeroInicial={10}/>
                     </Card>
+
                     <Card color="#9F6" title="Componente Controlado (Input)" >
                         <Input />
                     </Card>
